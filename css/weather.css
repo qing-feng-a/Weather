@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.more {
+  position: absolute;
+  width: 20px;
+  right: 10px;
+  top: 15px;
+}
+
+.content {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 40%;
+}
+
+.city {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 1.875rem 0;
+}
+
+.time {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  text-align: left;
+}
+
+.city-name {
+  font-size: 10px;
+}
+
+.wea-temp {
+  font-size: 3.325rem;
+}
+
+.wea-temp span {
+  display: inline-block;
+  font-size: 1.75rem;
+  vertical-align: text-top;
+  margin-top: .5rem;
+}
+
+.wea-temps {
+  padding: 10px;
+}
+
+.city-AQI {
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.date {
+  position: absolute;
+  overflow: auto;
+  bottom: -30px;
+  top: 260px;
+  width: 100%;
+  margin: 50px 10px;
+  color: #fff;
+}
+
+.info-weeks {
+  display: flex;
+  height: 50px;
+  border-top: 1px solid #fff;
+  line-height: 50px;
+}
+
+.info-date,
+.info-img,
+.info-temp {
+  flex: 1;
+}

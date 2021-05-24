@@ -1,0 +1,51 @@
+.back {
+  height: 20px;
+  margin: 20px 15px;
+}
+
+.city {
+  line-height: 80px;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  margin: 10px 10px;
+  justify-items: center;
+  /* justify-content: space-around; */
+  flex-direction: column;
+}
+
+.temp {
+  font-size: 28px;
+}
+
+.temp,
+.type {
+  flex: 1;
+}
+
+.type {
+  font-size: 12px;
+}
+
+.add {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+}
+
+.adds {
+  /* color: #fff; */
+  font-size: 50px;
+}
+
+.select {
+  background: rgba(0, 0, 0, .3);
+}

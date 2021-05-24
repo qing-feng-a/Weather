@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(../img/bg3.jpg);
+}
+
+header {
+  position: relative;
+}
+
+
+.title {
+  position: absolute;
+  top: 15px;
+  left: 60px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: normal;
+}

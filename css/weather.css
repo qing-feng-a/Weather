@@ -7,28 +7,28 @@
   /* display: none; */
   transition: all .1s;
   position: absolute;
-  width: 150px;
+  width: 9.375rem;
   height: 0px;
-  right: 30px;
-  top: 40px;
-  border-radius: 5px;
+  right: 1.875rem;
+  top: 2.5rem;
+  border-radius: .3125rem;
   background-color: #ffe;
   z-index: 9;
 }
 
 .control p {
   display: none;
-  margin: 0 10px;
-  padding: 15px 10px;
-  font-size: 14px;
-  border-bottom: 1px solid #ccc;
+  margin: 0 .625rem;
+  padding: .9375rem .625rem;
+  font-size: .875rem;
+  border-bottom: .0625rem solid #ccc;
 }
 
 .more {
   position: absolute;
-  width: 20px;
-  right: 10px;
-  top: 15px;
+  width: 1.25rem;
+  right: .625rem;
+  top: .9375rem;
 }
 
 .content {
@@ -36,8 +36,12 @@
   overflow: hidden;
   width: 100%;
   display: grid;
-  height: 100vh;
-  grid-template-rows: 40%;
+  height: 100%;
+  /* grid-template-rows: 40%; */
+}
+
+.time {
+  font-size: 1.25rem;
 }
 
 .city {
@@ -49,13 +53,13 @@
 
 .time {
   position: absolute;
-  top: 10px;
-  left: 30px;
+  top: .625rem;
+  left: 1.875rem;
   text-align: left;
 }
 
 .city-name {
-  font-size: 10px;
+  font-size: .625rem;
 }
 
 .wea-temp {
@@ -70,32 +74,49 @@
 }
 
 .wea-temps {
-  padding: 10px;
+  padding: .625rem;
+}
+
+.temps-high,
+.temps-low {
+  font-size: 1rem;
+}
+
+.wea-sky {
+  font-size: 1rem;
 }
 
 .city-AQI {
-  font-size: 12px;
+  font-size: .75rem;
   position: absolute;
+  top: 15rem;
   left: 0;
   right: 0;
-  bottom: 0;
+  /* bottom: ; */
 }
 
 .date {
   position: absolute;
   overflow: auto;
-  bottom: -30px;
-  top: 260px;
-  width: 100%;
-  margin: 50px 10px;
+  bottom: -1.875rem;
+  left: 0;
+  right: 0;
+  top: 16.25rem;
+  width: 95%;
+  font-size: 1rem;
+  /* margin: 0 40px; */
+  margin: 3.125rem auto;
   color: #fff;
+
+
 }
 
 .info-weeks {
   display: flex;
-  height: 50px;
-  border-top: 1px solid #fff;
-  line-height: 50px;
+  /* margin-right: 5px; */
+  height: 3.125rem;
+  border-top: .0625rem solid #fff;
+  line-height: 3.125rem;
 }
 
 .info-date,

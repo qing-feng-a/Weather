@@ -24,7 +24,6 @@ function Manager (cursor) {
     cursor.continue();
   } else {
     if (flag) {
-      console.log('-----'+localStorage.getItem('city'));
       let city = main.children[0].children[0].innerText
       localStorage.setItem('city',city)
       main.children[0].classList.add('select')
@@ -41,14 +40,16 @@ setTimeout(() => {
   let date1 = 0
   main.addEventListener('click', function (e) {
     // 进行选择操作
-    let city = e.target.childNodes[1].innerText;
-    for (let i = 0; i < main.children.length; i++) {
+    if (e.target.className == 'item') {
+      let city = e.target.childNodes[1].innerText;
+      for (let i = 0; i < main.children.length; i++) {
       main.children[i].classList.remove('select')
     }
     e.target.classList.add('select')
     // getResult("citys", "readonly", city)
     localStorage.setItem('city',city)
     // setCity(city)
+    }
   })
   // 开始长按
   main.addEventListener("touchstart", function (e) {
@@ -64,6 +65,10 @@ setTimeout(() => {
     }, 100);
     // 长按结束，未超过0.4s
     main.addEventListener("touchend", function () {
+      date1 = 0
+      clearInterval(time)
+    })
+    main.addEventListener('touchmove', function () {
       date1 = 0
       clearInterval(time)
     })

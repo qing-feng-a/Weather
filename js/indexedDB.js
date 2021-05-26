@@ -42,6 +42,7 @@ function getResult (objStore, method, name) {
     let res = store.get(name)
     res.onerror = (e) => {
       console.log("error");
+
     }
     res.onsuccess = (e) => {
       console.log("success");
@@ -75,7 +76,9 @@ function onCursur (objStore,type) {
           // 执行的是主页面的展示
           cityname = localStorage.getItem('city')
           if (cityname == null) {
+            if(!cursor)GoTo('addCity.html')
             cityname = cursor.key
+            
             localStorage.setItem('city',cityname)
           }
           console.log(cityname);

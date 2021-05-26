@@ -17,8 +17,8 @@ function setWeather(weatherData) {
   city.innerHTML = '<h1>' + weatherData.city + '</h1>'
   wendu.innerHTML = weatherData.wendu + '<span>℃</span>'
 
-  high.innerHTML = weatherData.forecast[0].high.match(/\d+/g)
-  low.innerHTML = weatherData.forecast[0].low.match(/\d+/g)
+  high.innerHTML = weatherData.forecast[0].high.match(/\d+/g)+'℃'
+  low.innerHTML = weatherData.forecast[0].low.match(/\d+/g)+'℃ / '
   type.innerHTML = weatherData.forecast[0].type +
     '  ' + weatherData.forecast[0].fengxiang
   ganmao.innerHTML = weatherData.ganmao
@@ -57,7 +57,8 @@ function setBackGround (weatherData) {
   } else
   // if (weatherData.forecast[0].type.indexOf('云') !== -1)
     {
-    content.style.background = 'url(img/bg2.jpg) no-repeat fixed'
+    content.style.background = 'url(img/bg2.jpg) no-repeat'
+    content.style.backgroundSize = '100%'
     document.body.style.background = 'rgb(50, 62, 76)'
   }
 

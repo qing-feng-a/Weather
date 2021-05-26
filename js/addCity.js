@@ -40,6 +40,7 @@ icon.addEventListener('click', function () {
     // 查找城市
     searchCity(input.value)
     tag = 1
+    GoTo('cityManager.html')
   }
 })
 // 监听推荐城市列表的点击

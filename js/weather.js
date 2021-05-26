@@ -21,7 +21,7 @@ document.addEventListener('click', function (e) {
   if (e.target.className == 'control' || e.target.className == 'more') {
     // control.style.display = 'block'
     with (control.style) {
-      height = '200px'
+      height = '12.5rem'
     }
 
     p.forEach(item => item.style.display='block');

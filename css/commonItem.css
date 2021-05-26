@@ -1,9 +1,9 @@
 .item {
   display: flex;
   justify-content: space-between;
-  margin: 7px;
-  height: 80px;
+  margin: .4375rem;
+  height: 5rem;
   color: #fff;
-  border-radius: 8px;
+  border-radius: .5rem;
   background: linear-gradient(to right, #18f, #2af, #4cf, #6ef)
 }
